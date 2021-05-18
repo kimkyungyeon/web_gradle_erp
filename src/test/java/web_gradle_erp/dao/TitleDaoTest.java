@@ -54,6 +54,13 @@ public class TitleDaoTest {
 
 	@Test
 	public void test04SelectTitleByNo() {
+		System.out.printf("%s()%n","test04SelectTitleByNo");
+		Title searchTitle = new Title(1);
+		Title title = dao.selectTitleByNo(searchTitle);
+		Assert.assertNotNull(title);
+		System.out.println(title);
+				
+
 	}
 
 	@Test
